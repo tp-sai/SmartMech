@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadBooking()">
+
+<nav>...</nav>
+
+<form>
+  <input placeholder="Name" required>
+  <input type="email" placeholder="Email" required>
+  <input placeholder="Phone" required>
+  <input placeholder="Car Brand">
+  <input placeholder="Car Model">
+  <input id="selectedServices" readonly>
+  <input type="number" id="baseCost" placeholder="Base Cost">
+  <select id="serviceType" onchange="calculateBooking()">
+    <option>Normal</option>
+    <option>Express</option>
+  </select>
+  <p id="summary"></p>
+  <button type="submit">Confirm Booking</button>
+</form>
+
+<script src="js/script.js"></script>
+</body>
+</html>
